@@ -78,38 +78,6 @@ const About: NextPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="skills padd-15">
-                  <div className="row">
-                    <div className="skill-item padd-15">
-                      <h5>Java</h5>
-                      <div className="progress">
-                        <div className="progress-in" style={{width: "80%"}}/>
-                        <div className="skill-percent">80%</div>
-                      </div>
-                    </div>
-                    <div className="skill-item padd-15">
-                      <h5>Spring Framework</h5>
-                      <div className="progress">
-                        <div className="progress-in" style={{width: "60%"}}/>
-                        <div className="skill-percent">60%</div>
-                      </div>
-                    </div>
-                    <div className="skill-item padd-15">
-                      <h5>Hibernate</h5>
-                      <div className="progress">
-                        <div className="progress-in" style={{width: "50%"}}/>
-                        <div className="skill-percent">50%</div>
-                      </div>
-                    </div>
-                    <div className="skill-item padd-15">
-                      <h5>MariaDB</h5>
-                      <div className="progress">
-                        <div className="progress-in" style={{width: "70%"}}/>
-                        <div className="skill-percent">70%</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
               <div className="row">
                 <div className="education padd-15">
