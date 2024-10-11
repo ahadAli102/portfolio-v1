@@ -566,15 +566,15 @@ align-items: center;
   font-weight: 400;
 }
 .about .about-content .education {
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
   margin-top: 30px;
 }
 .about .about-content .experience {
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
   margin-top: 30px;
 }
 .about .about-content h3.title {
@@ -634,6 +634,13 @@ align-items: center;
   font-size: 18px;
   margin-bottom: 15px;
   text-transform: capitalize;
+  color: #302e4d;
+}
+.about .about-content .timeline .timeline-title .timeline-company {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: none;
   color: #302e4d;
 }
 .about .about-content .timeline .timeline-text {
@@ -1128,6 +1135,7 @@ align-items: center;
 [data-theme='dark'] .portfolio .portfolio-filter button,
 [data-theme='dark'] .service .service-item .service-item-inner h4,
 [data-theme='dark'] .about .about-content .timeline .timeline-title,
+[data-theme='dark'] .about .about-content .timeline .timeline-title .timeline-company,
 [data-theme='dark'] .about .about-content h3.title,
 [data-theme='dark'] .about .about-content .skills .skill-item h5,
 [data-theme='dark'] .about .about-content .personal-info .info-item p,
