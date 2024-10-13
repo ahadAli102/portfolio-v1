@@ -1,5 +1,7 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-/* General style 
+@import "global.css";
+
+/* General style
 ======================================================== */
 html {
   scroll-behavior: smooth;
@@ -1274,5 +1276,41 @@ align-items: center;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+}
+
+
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Ensures good spacing between items */
+  gap: 15px;
+}
+
+.skill-image {
+  object-fit: contain;
+  width: auto;
+  height: 120px; /* Static height */
+}
+
+@media (max-width: 768px) {
+  .skills-row {
+    justify-content: center; /* Centers the images on smaller screens */
+  }
+
+  .skill-image {
+    height: 100px; /* Reduce height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-row {
+    flex-direction: column; /* Stack images vertically on very small screens */
+    align-items: center;
+  }
+
+  .skill-image {
+    height: 80px; /* Further reduce height for smaller screens */
   }
 }
