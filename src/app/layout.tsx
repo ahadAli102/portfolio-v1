@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
+import type {Metadata} from "next";
+import {Inter} from "next/font/google";
+import {Analytics} from "@vercel/analytics/react";
 import "./globals.css";
 import "../styles/style.css";
 import "../styles/blue.css";
@@ -9,31 +9,31 @@ import Sidebar from "@/components/sidebar/sidebar";
 import Providers from "./providers";
 import ThemeSwitch from "@/components/panel/ThemeSwitch";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
-  title: "Ahad Ali",
-  description:
-    "A backend Developer",
+    title: "Ahad Ali",
+    description:
+        "A backend Developer",
 };
 
 export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
+                                       children,
+                                   }: {
+    children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
+    return (
+        <html lang="en">
+        <body className={inter.className}>
         <Providers>
-          <div className="temp-layout">
-            <ThemeSwitch />
-            <Sidebar />
-            {children}
-          </div>
+            <div className="temp-layout">
+                <ThemeSwitch/>
+                <Sidebar/>
+                {children}
+            </div>
         </Providers>
-        <Analytics />
-      </body>
-    </html>
-  );
+        <Analytics/>
+        </body>
+        </html>
+    );
 }
