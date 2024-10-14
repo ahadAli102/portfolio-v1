@@ -1,7 +1,7 @@
 import type {NextPage} from "next";
 import Skills from "@/components/body/Skills";
-import Image from "next/image";
 import Experience from "@/components/body/Experience";
+import Link from "next/link";
 
 const About: NextPage = () => {
     return (
@@ -69,13 +69,8 @@ const About: NextPage = () => {
                                     </div>
                                     <div className="row">
                                         <div className="buttons padd-15">
-                                            <a
-                                                href="/assets/docs/resume.pdf"
-                                                target="_target"
-                                                className="btn"
-                                            >
-                                                Download CV
-                                            </a>
+
+                                            <Link className="btn" href="/resume">Download CV</Link>
                                             <a
                                                 href="#contact"
                                                 data-section-index={0}
