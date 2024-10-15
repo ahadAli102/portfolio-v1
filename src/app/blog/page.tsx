@@ -38,19 +38,18 @@ const Blog: React.FC = () => {
                 </div>
                 <div className="row">
                     {articles.map((article, index) => (
-                        <div className="blog-item padd-15" key={index}>
+                        <div className="relative blog-item padd-15" key={index}>
                             <div className="blog-item-inner shadow-dark">
                                 <div className="blog-img">
                                     <img
                                         src={(article.description as any).toString().match(/<img[^>]+src="([^">]+)"/)?.[1] || '/imgs/blog/default.jpg'}
                                         alt={article.title}
-                                        className="blog-image" // Apply the responsive class here
+                                        className="blog-image"
                                     />
                                     <div className="blog-date">{new Date(article.pubDate).toDateString()}</div>
                                 </div>
                                 <div className="blog-info">
                                     <h4 className="blog-title">{article.title}</h4>
-                                    <p className="blog-description">{article.description}</p>
                                     <p className="blog-tags">
                                         Tags: {article.categories.map((category, index) => (
                                         <a href={`#${category}`} key={index}>
@@ -59,7 +58,7 @@ const Blog: React.FC = () => {
                                         </a>
                                     ))}
                                     </p>
-                                    <Link href={article.link} className="blog-link"> Read More </Link>
+                                    <Link href={article.link} className="blog-tags absolute bottom-0 right-0 mr-8 mb-2"> Read More </Link>
                                 </div>
                             </div>
                         </div>
