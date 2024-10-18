@@ -1,9 +1,11 @@
-import type {NextPage} from "next";
+'use client'
 import Skills from "@/components/body/Skills";
 import Experience from "@/components/body/Experience";
 import Link from "next/link";
+import React from "react";
 
-const About: NextPage = () => {
+const About: React.FC = () => {
+
     return (
         <main>
             <section className="about section" id="about">
@@ -38,7 +40,7 @@ const About: NextPage = () => {
                                     <div className="row">
                                         <div className="info-item padd-15">
                                             <p>
-                                                Website : <span>http://localhost:3000/</span>
+                                                Website : <span>{window.location.origin}</span>
                                             </p>
                                         </div>
                                         <div className="info-item padd-15">
