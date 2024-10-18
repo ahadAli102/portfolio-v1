@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 import { NextRequest, NextResponse } from "next/server";
-import { EmailBody } from "@/app/type/EmailBody";
+import { EmailBody } from "@/type/EmailBody";
 import { promises as fs } from 'fs';
 import path from 'path';
 

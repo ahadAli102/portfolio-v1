@@ -1,12 +1,6 @@
 'use client'
 import React, { useState } from "react";
-
-export interface EmailBody {
-    name: string;
-    email: string;
-    subject: string;
-    message: string;
-}
+import {EmailBody} from "@/type/EmailBody";
 
 const Contact: React.FC = () => {
     const [emailData, setEmailData] = useState<EmailBody>({
@@ -43,10 +37,15 @@ const Contact: React.FC = () => {
             }
             setSuccess("Message sent successfully!");
             setEmailData({ name: "", email: "", subject: "", message: "" });
-        }).catch(error => {
+        }).catch(() => {
             setError("Failed to send message. Please try again.");
-            console.error("Error sending message:", error);
-        }).finally(() => setIsLoading(false));
+        }).finally(() => {
+            setIsLoading(false);
+            setTimeout(() => {
+                setSuccess("");
+                setError("");
+            }, 2000);
+        });
     };
 
     return (
@@ -150,12 +149,10 @@ const Contact: React.FC = () => {
                             <div className="row">
                                 <div className="col-12 padd-15">
                                     <button className="btn" disabled={isLoading} onClick={handleSubmit}>
-                                        {isLoading ? "Sending..." : "Send Message"}
+                                        {isLoading ? "Sending..." : success || error || "Send Message"}
                                     </button>
                                 </div>
                             </div>
-                            {error && <div className="contact-info-item padd-15">{error}</div>}
-                            {success && <div className="contact-info-item padd-15">{success}</div>}
                         </form>
                     </div>
                     {/* Contact Form Ended */}
