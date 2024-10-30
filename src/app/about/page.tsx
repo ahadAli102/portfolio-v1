@@ -5,6 +5,11 @@ import Link from "next/link";
 import React from "react";
 
 const About: React.FC = () => {
+    const [origin, setOrigin] = React.useState('');
+
+    React.useEffect(() => {
+        setOrigin(window.location.origin);
+    }, []);
 
     return (
         <main>
@@ -40,7 +45,7 @@ const About: React.FC = () => {
                                     <div className="row">
                                         <div className="info-item padd-15">
                                             <p>
-                                                Website : <span>{window.location.origin}</span>
+                                                Website : <span>{origin}</span>
                                             </p>
                                         </div>
                                         <div className="info-item padd-15">
