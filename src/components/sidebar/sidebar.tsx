@@ -22,11 +22,11 @@ const Sidebar = () => {
                 <span/>
             </div>
             <div className="aside-inner">
-                <div className="logo">
+                {/* <div className="logo">
                     <Link href="/" onClick={handleClose}>
                         Folio
                     </Link>
-                </div>
+                </div> */}
                 <ul className="nav">
                     <li onClick={handleClose}>
                         <Link href="/" className={`${pathUrl == "/" && "active"}`}>
