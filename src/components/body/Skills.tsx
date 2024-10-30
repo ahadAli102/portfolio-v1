@@ -1,67 +1,38 @@
 import React from 'react';
 import Image from "next/image";
 
+type Skill = {
+    name: string;
+    path: string;
+    width: number;
+    height: number;
+};
+
+const skillsList: Skill[] = [
+    { name: "Java", path: "/imgs/skills/java.png", width: 120, height: 120 },
+    { name: "Kotlin", path: "/imgs/skills/kotlin.png", width: 100, height: 100 },
+    { name: "Spring Framework", path: "/imgs/skills/spring-framework.png", width: 200, height: 100 },
+    { name: "Spring Boot", path: "/imgs/skills/spring-boot.png", width: 200, height: 100 },
+    { name: "JAX-WS", path: "/imgs/skills/jax-ws.png", width: 200, height: 100 },
+    { name: "Netty", path: "/imgs/skills/netty.png", width: 200, height: 100 },
+    { name: "Hibernate", path: "/imgs/skills/hibernate.png", width: 200, height: 100 },
+];
+
 const Skills: React.FC = () => {
     return (
         <div className="skill padd-15">
             <h3 className="title">Skills</h3>
             <div className="skills-row">
-                <Image
-                    className="skill-image"
-                    src="/imgs/skills/java.png"
-                    alt="Java Logo"
-                    width={120}
-                    height={120}
-                    layout="intrinsic"
-                />
-                <Image
-                    className="skill-image"
-                    src="/imgs/skills/kotlin.png"
-                    alt="Kotlin Logo"
-                    width={100}
-                    height={100}
-                    layout="intrinsic"
-                />
-                <Image
-                    className="skill-image"
-                    src="/imgs/skills/spring-framework.png"
-                    alt="Spring Framework Logo"
-                    width={200}
-                    height={100}
-                    layout="intrinsic"
-                />
-                <Image
-                    className="skill-image"
-                    src="/imgs/skills/spring-boot.png"
-                    alt="Spring Boot Logo"
-                    width={200}
-                    height={100}
-                    layout="intrinsic"
-                />
-                <Image
-                    className="skill-image"
-                    src="/imgs/skills/jax-ws.png"
-                    alt="JAX-WS Logo"
-                    width={200}
-                    height={100}
-                    layout="intrinsic"
-                />
-                <Image
-                    className="skill-image"
-                    src="/imgs/skills/netty.png"
-                    alt="Netty Logo"
-                    width={200}
-                    height={100}
-                    layout="intrinsic"
-                />
-                <Image
-                    className="skill-image"
-                    src="/imgs/skills/hibernate.png"
-                    alt="Hibernate Logo"
-                    width={200}
-                    height={100}
-                    layout="intrinsic"
-                />
+                {skillsList.map((skill) => (
+                    <Image
+                        key={skill.name}
+                        className="skill-image"
+                        src={skill.path}
+                        alt={`${skill.name} Logo`}
+                        width={skill.width}
+                        height={skill.height}
+                    />
+                ))}
             </div>
         </div>
     );
