@@ -16,6 +16,10 @@ const skillsList: Skill[] = [
     { name: "JAX-WS", path: "/imgs/skills/jax-ws.png", width: 200, height: 100 },
     { name: "Netty", path: "/imgs/skills/netty.png", width: 200, height: 100 },
     { name: "Hibernate", path: "/imgs/skills/hibernate.png", width: 200, height: 100 },
+    { name: "Hibernate", path: "/imgs/skills/type-script.png", width: 100, height: 100 },
+    { name: "Hibernate", path: "/imgs/skills/next.png", width: 100, height: 100 },
+    { name: "Hibernate", path: "/imgs/skills/mysql.png", width: 100, height: 100 },
+    { name: "Hibernate", path: "/imgs/skills/docker.png", width: 100, height: 100 },
 ];
 
 const Skills: React.FC = () => {
