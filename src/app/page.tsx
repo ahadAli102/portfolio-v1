@@ -21,6 +21,9 @@ export default async function Home() {
                                 <a href="https://www.linkedin.com/in/ahad2001/" target="_blank">
                                     <i className="fa fa-linkedin"/>
                                 </a>
+                                <a href="https://medium.com/@linkonahad10" target="_blank">
+                                    <i className="fa fa-medium"/>
+                                </a>
                                 <a href="https://linkedin.com/in/" target="_blank">
                                     <i className="fa fa-skype"/>
                                 </a>
