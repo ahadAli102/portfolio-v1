@@ -21,13 +21,8 @@ const Sidebar = () => {
             <div onClick={handleOpen} className="nav-toggler">
                 <span/>
             </div>
-            <div className="aside-inner">
-                {/* <div className="logo">
-                    <Link href="/" onClick={handleClose}>
-                        Folio
-                    </Link>
-                </div> */}
-                <ul className="nav">
+            <div className="aside-inner flex flex-col justify-center h-full"> 
+                <ul className="nav flex flex-col space-y-4 w-full px-6">
                     <li onClick={handleClose}>
                         <Link href="/" className={`${pathUrl == "/" && "active"}`}>
                             <i className="fa fa-home"/> Home
