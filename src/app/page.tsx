@@ -1,4 +1,13 @@
-export default async function Home() {
+import TypeWriter from '@/components/TypeWriter';
+
+export default function Home() {
+    const titles = [
+        "Software Engineer",
+        "Backend Developer",
+        "Blogger",
+        "Tech Enthusiast",
+        "Mentor",
+    ];
 
     return (
         <main>
@@ -31,7 +40,7 @@ export default async function Home() {
                         </div>
                         <div className="description md:w-2/3">
                             <h1 className="text-2xl font-bold text-left">Md. Ahad Ali</h1>
-                            <p className="text-lg font-semibold text-left">Software Engineer</p>
+                            <TypeWriter texts={titles} delay={200} />
                             <div className="space-y-4 mt-4">
                                 <p className="text-justify">
                                     Results-driven Software Engineer with 2 years of hands-on experience 
