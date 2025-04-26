@@ -76,15 +76,8 @@ const About: React.FC = () => {
                                     </div>
                                     <div className="row">
                                         <div className="buttons padd-15">
-
                                             <Link className="btn" href="/resume">Download CV</Link>
-                                            <a
-                                                href="#contact"
-                                                data-section-index={0}
-                                                className="btn hire-me"
-                                            >
-                                                Hire Me
-                                            </a>
+                                            <Link className="btn hire-me" href="/contact">Hire Me</Link>
                                         </div>
                                     </div>
                                 </div>
