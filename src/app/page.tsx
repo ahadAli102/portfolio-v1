@@ -17,7 +17,7 @@ export default function Home() {
                     <div className="intro flex flex-col md:flex-row md:items-center md:justify-between md:gap-8">
                         <div className="flex flex-col items-center md:items-center md:w-1/3">
                             <img
-                                src="/imgs/img.png"
+                                src="./imgs/img.png"
                                 alt="Ahad Ali Profile"
                                 className="shadow-dark"
                             />
