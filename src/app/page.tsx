@@ -1,4 +1,5 @@
 import TypeWriter from '@/components/TypeWriter';
+import { FaFacebook, FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 
 export default function Home() {
     const titles = [
@@ -17,21 +18,21 @@ export default function Home() {
                         <div className="flex flex-col items-center md:items-center md:w-1/3">
                             <img
                                 src="/imgs/img.png"
-                                alt="Al Siam Profile"
+                                alt="Ahad Ali Profile"
                                 className="shadow-dark"
                             />
                             <div className="social-links">
                                 <a href="https://www.facebook.com/profile.php?id=100013020034819" target="_blank">
-                                    <i className="fa fa-facebook"/>
+                                    <FaFacebook size={25} />
                                 </a>
                                 <a href="https://github.com/ahadAli102" target="_blank">
-                                    <i className="fa fa-github"/>
+                                    <FaGithub size={25} />
                                 </a>
                                 <a href="https://www.linkedin.com/in/ahad2001/" target="_blank">
-                                    <i className="fa fa-linkedin"/>
+                                    <FaLinkedin size={25} />
                                 </a>
                                 <a href="https://medium.com/@linkonahad10" target="_blank">
-                                    <i className="fa fa-medium"/>
+                                    <FaMedium size={25} />
                                 </a>
                             </div>
                         </div>
