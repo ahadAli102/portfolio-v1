@@ -16,7 +16,7 @@ export default function Home() {
                     <div className="intro flex flex-col md:flex-row md:items-center md:justify-between md:gap-8">
                         <div className="flex flex-col items-center md:items-center md:w-1/3">
                             <img
-                                src="/imgs/alsiam.png"
+                                src="/imgs/img.png"
                                 alt="Al Siam Profile"
                                 className="shadow-dark"
                             />
@@ -32,9 +32,6 @@ export default function Home() {
                                 </a>
                                 <a href="https://medium.com/@linkonahad10" target="_blank">
                                     <i className="fa fa-medium"/>
-                                </a>
-                                <a href="https://linkedin.com/in/" target="_blank">
-                                    <i className="fa fa-skype"/>
                                 </a>
                             </div>
                         </div>
