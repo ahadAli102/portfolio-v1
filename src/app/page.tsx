@@ -40,7 +40,7 @@ export default function Home() {
                             <TypeWriter texts={titles} delay={200} />
                             <div className="space-y-4 mt-4">
                                 <p className="text-justify">
-                                    Results-driven Software Engineer with 2 years of hands-on experience 
+                                    Results-driven Software Engineer with 3 years of hands-on experience
                                     in backend development and API integration, specializing in Java, 
                                     Kotlin, and Spring frameworks.
                                     Known for designing and optimizing high-performance middleware 
