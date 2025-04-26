@@ -73,6 +73,10 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Install TypeScript definitions for nodemailer
+        run: ${{ steps.detect-package-manager.outputs.manager }} install --save-dev @types/nodemailer
+      - name: Update browserslist database
+        run: npx update-browserslist-db@latest --yes
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
