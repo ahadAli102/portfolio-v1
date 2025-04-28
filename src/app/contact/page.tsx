@@ -59,7 +59,7 @@ export default function Contact() {
                     </div>
                     <div className="row">
                         <div className="col-12 padd-15">
-                            <button type="submit" className="btn" id={'send-button-id'}>Send Message</button>
+                            <button type="submit" className="btn" id={'send-button-id'} disabled={true} >Send Message</button>
                         </div>
                     </div>
                 </form>
