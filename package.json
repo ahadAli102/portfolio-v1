@@ -2,6 +2,7 @@
   "name": "protfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://md-ahad-ali.github.io/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
