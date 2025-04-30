@@ -8,6 +8,7 @@ import "../styles/theme.css";
 import Sidebar from "@/components/sidebar/sidebar";
 import Providers from "./providers";
 import ThemeSwitch from "@/components/panel/ThemeSwitch";
+import Script from "next/script";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -24,6 +25,18 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
+        <head>
+            <Script async src="https://www.googletagmanager.com/gtag/js?id=G-BLQDQ0ZDSW"></Script>
+            <Script id={'google-analytics'} strategy="afterInteractive">
+                {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-BLQDQ0ZDSW');
+                `}
+            </Script>
+        </head>
         <body className={inter.className}>
         <Providers>
             <div className="temp-layout">
